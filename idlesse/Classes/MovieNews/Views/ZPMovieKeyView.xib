@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dns-fZ-QDO">
+                    <rect key="frame" x="5" y="5" width="382" height="223"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="复杂世界" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPg-RU-ZRm">
+                            <rect key="frame" x="0.0" y="112" width="191" height="111"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文艺生活" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbk-bA-4Q6">
+                            <rect key="frame" x="254" y="0.0" width="128" height="112"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后会无期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaS-YB-lwO">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="112"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马达加斯加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbl-l7-UTS">
+                            <rect key="frame" x="128" y="0.0" width="128" height="112"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个电影" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-eO-8zc">
+                            <rect key="frame" x="191" y="112" width="191" height="111"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="VB4-eO-8zc" secondAttribute="bottom" id="0hp-jb-LVV"/>
+                        <constraint firstItem="dbl-l7-UTS" firstAttribute="top" secondItem="Dns-fZ-QDO" secondAttribute="top" id="28u-Er-rmP"/>
+                        <constraint firstItem="xPg-RU-ZRm" firstAttribute="leading" secondItem="Dns-fZ-QDO" secondAttribute="leading" id="6gK-gr-85n"/>
+                        <constraint firstItem="MaS-YB-lwO" firstAttribute="leading" secondItem="Dns-fZ-QDO" secondAttribute="leading" id="8z4-Fo-E4f"/>
+                        <constraint firstItem="Fbk-bA-4Q6" firstAttribute="height" secondItem="dbl-l7-UTS" secondAttribute="height" id="Azq-UU-hQp"/>
+                        <constraint firstItem="Fbk-bA-4Q6" firstAttribute="width" secondItem="dbl-l7-UTS" secondAttribute="width" id="BHi-w5-dY3"/>
+                        <constraint firstAttribute="bottom" secondItem="xPg-RU-ZRm" secondAttribute="bottom" id="BR2-oZ-xTG"/>
+                        <constraint firstItem="MaS-YB-lwO" firstAttribute="width" secondItem="Dns-fZ-QDO" secondAttribute="width" multiplier="1/3" id="CFS-mj-YTf"/>
+                        <constraint firstItem="Fbk-bA-4Q6" firstAttribute="top" secondItem="Dns-fZ-QDO" secondAttribute="top" id="Hcr-sM-v3H"/>
+                        <constraint firstItem="dbl-l7-UTS" firstAttribute="width" secondItem="MaS-YB-lwO" secondAttribute="width" id="NH5-hl-2QM"/>
+                        <constraint firstItem="xPg-RU-ZRm" firstAttribute="width" secondItem="Dns-fZ-QDO" secondAttribute="width" multiplier="1/2" id="apT-w9-rLN"/>
+                        <constraint firstItem="VB4-eO-8zc" firstAttribute="width" secondItem="xPg-RU-ZRm" secondAttribute="width" id="fnJ-Gr-iO0"/>
+                        <constraint firstItem="xPg-RU-ZRm" firstAttribute="top" secondItem="MaS-YB-lwO" secondAttribute="bottom" id="jpZ-yI-Yd9"/>
+                        <constraint firstAttribute="trailing" secondItem="Fbk-bA-4Q6" secondAttribute="trailing" id="jpt-YY-951"/>
+                        <constraint firstItem="dbl-l7-UTS" firstAttribute="height" secondItem="MaS-YB-lwO" secondAttribute="height" id="mqJ-CW-S5R"/>
+                        <constraint firstItem="dbl-l7-UTS" firstAttribute="leading" secondItem="MaS-YB-lwO" secondAttribute="trailing" id="qCV-oi-VvI"/>
+                        <constraint firstItem="VB4-eO-8zc" firstAttribute="top" secondItem="Fbk-bA-4Q6" secondAttribute="bottom" id="rWL-CI-cjQ"/>
+                        <constraint firstAttribute="trailing" secondItem="VB4-eO-8zc" secondAttribute="trailing" id="top-bL-AKD"/>
+                        <constraint firstItem="MaS-YB-lwO" firstAttribute="height" secondItem="Dns-fZ-QDO" secondAttribute="height" multiplier="0.5" id="uxp-5U-JBt"/>
+                        <constraint firstItem="MaS-YB-lwO" firstAttribute="top" secondItem="Dns-fZ-QDO" secondAttribute="top" id="wBq-0q-yjH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dns-fZ-QDO" secondAttribute="trailing" constant="5" id="9CO-P2-mjU"/>
+                <constraint firstItem="Dns-fZ-QDO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="PaO-7n-TVa"/>
+                <constraint firstAttribute="bottom" secondItem="Dns-fZ-QDO" secondAttribute="bottom" constant="5" id="Rhc-6u-Vzd"/>
+                <constraint firstItem="Dns-fZ-QDO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="gUk-sW-vuh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="117" y="-51.5"/>
+        </view>
+    </objects>
+</document>

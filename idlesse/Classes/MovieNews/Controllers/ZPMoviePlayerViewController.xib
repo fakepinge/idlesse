@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZPMoviePlayerViewController">
+            <connections>
+                <outlet property="playerView" destination="btX-C2-TE0" id="azS-e5-HI0"/>
+                <outlet property="view" destination="0Se-sM-3Bd" id="Wzk-8h-FXb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0Se-sM-3Bd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btX-C2-TE0" customClass="ZFPlayerView">
+                    <rect key="frame" x="0.0" y="194" width="320" height="180"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="btX-C2-TE0" secondAttribute="height" multiplier="16:9" priority="750" id="hmD-JB-8r3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gah-gK-wum" userLabel="statusView">
+                    <rect key="frame" x="250" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="YJD-oO-xOr"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="YJD-oO-xOr"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="YJD-oO-xOr"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="btX-C2-TE0" secondAttribute="trailing" id="OYO-8w-kZa"/>
+                <constraint firstItem="btX-C2-TE0" firstAttribute="leading" secondItem="0Se-sM-3Bd" secondAttribute="leading" id="SQl-Jv-e13"/>
+                <constraint firstItem="gah-gK-wum" firstAttribute="leading" secondItem="0Se-sM-3Bd" secondAttribute="leading" id="iTY-sD-Cf5"/>
+                <constraint firstItem="gah-gK-wum" firstAttribute="top" secondItem="0Se-sM-3Bd" secondAttribute="top" id="l0L-c7-fM4"/>
+                <constraint firstItem="btX-C2-TE0" firstAttribute="centerY" secondItem="0Se-sM-3Bd" secondAttribute="centerY" id="xCX-sl-4us"/>
+                <constraint firstAttribute="trailing" secondItem="gah-gK-wum" secondAttribute="trailing" id="yjC-cL-RgF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="gah-gK-wum"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="iTY-sD-Cf5"/>
+                    <exclude reference="l0L-c7-fM4"/>
+                    <exclude reference="yjC-cL-RgF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="gah-gK-wum"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="iTY-sD-Cf5"/>
+                    <include reference="l0L-c7-fM4"/>
+                    <include reference="yjC-cL-RgF"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="457" y="-384"/>
+        </view>
+    </objects>
+</document>
